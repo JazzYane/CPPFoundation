@@ -1,0 +1,58 @@
+1.人工智能简介
+1.3.1人工智能包括计算智能、感知智能和认知智能等层次，目前人工智能还介于前 两者之间，目前在弱人工智能”（Narrow AI）阶段，距离“强 人工智能”（General AI）
+1.3.2机器学习
+机器学习是通过一些让计算机可以自动“学习”的算法并从数据中分析获得规 律，然后利用规律对新样本进行预测。
+机器学习的形式化的描述 对于某类任务T和性能度量P，如果一个计算机程序在T上以P衡量的性能 随着经验E而自我完善，那么就称这个计算机程序在从经验E学习
+机器学习分为有监督学习，半监督学习，无监督学习，强化学习
+有监督学习（supervised learning）指的是事先需要准备好输入与正确输出（区分方法）相配套的训练数据，让计算机进行学习，以便当它被输入某个数据时能够得到正确的输出（区分方法）
+无监督学习（unsupervised learning）的目的是让计算机自己去学习怎样 做一些事情，所有数据只有特征而没有标记。
+无监督学习被运用于仅提供输入用数据、需要计算机自己找出数据内在结构的场合。其目的是让计算机从数据中抽取其中所包含的模式及规则。
+二者的中间地带是半监督学习（semi-supervised learning）。对于半监督学习，其训练数据一部分有标记，另一部分没有标记，而没有标记数据的数量常常极大于有标记数据的数量。
+它的基本规律是：数据的分布必然不是完全随机的，通过结合有标记数据的 局部特征，以及大量没标记数据的整体分布，可以得到比较好的分类结果
+强化学习（reinforcement learning，RL），是解决计算机从感知到决策控制的问题，从而实现通用人工智能。
+强化学习是目标导向的，从白纸一张的状态开始，经由许多个步骤来实现某 一维度上的目标最大化。最简单的理解是在训练过程中，不断去尝试，错误 就惩罚，正确就奖励，由此训练得到的模型在各个状态环境中都最好。
+对强化学习来说，它虽然没有标记，但有一个延迟奖励与训练相关，通过学 习过程中的激励函数获得某种从状态到行动的映射。强化学习强调如何基于 环境而行动，以取得最大化的预期利益。
+强化学习一般在游戏、下棋等需要连续决策的领域。
+无监督机器学习的典型应用模式：针对聚类  常见算法：k-means算法、关联规则抽取
+有监督机器学习的典型应用模式：针对连续数据  常见算法：线性回归、 Gradient Boosting、 AdaBoost、 神经网络
+有监督机器学习的典型应用模式：针对离散数据  常见算法：逻辑回归、 决策树、 KNN、 随机森林、 支持向量机、 朴素贝叶斯、 神经网络
+1.3.2深度学习
+深度学习：神经网络、常见激活函数、深度神经网络、卷积神经网络 CNN、卷积神经网络 LeNet、AlexNet、VGG Net、Google Net
+深度学习框架：TensorFlow、Keras、Caffe、Pytorch、Theano、MXNet、Chainer、CNTK\
+Microsoft认知工具包(Cognitive Toolkit)之前被大家所知的缩略是 CNTK
+2016年微软宣布，已在GitHub上向外部开发人员开源其人工智能工具包 CNTK（Computational Network Toolkit）
+CNTK工具包中的语音和图像识别速度比较快
+Keras 是一个非常高层的库，可以工作在 Theano 和、TensorFlow和CNTK 之上
+Keras 强调极简主义——你只需几行代码就能构建一个神经网络，Keras 为 支持快速实验而生，能够把你的idea迅速转换为结果
+Keras的句法是相当明晰的，文档也非常好
+支持Python
+DL4J是基于JVM、聚焦行业应用且提供商业支持的分布式深度学习框架，其 宗旨是在合理的时间内解决各类涉及大量数据的问题。支持Java
+Chainer是一个专门为高效研究和开发深度学习算法而设计的开源框架
+基于Python的独立的深度学习框架
+Chainer在训练时“实时”构建计算图，“边运行边定义”的方法使构建深 度学习网络变的灵活简单
+这种方法可以让用户在每次迭代时或者对每个样本根据条件更改计算图。同 时也很容易使用标准调试器和分析器来调试和重构基于Chainer的代码
+PaddlePaddle，百度旗下深度学习开源平台。Paddle(Parallel Distributed Deep Learning，并行分布式深度学习)
+2016年9月1日百度世界大会上，百度首席科学家Andrew Ng(吴恩达)首次 宣布将百度深度学习平台对外开放，命名PaddlePaddle。
+1.3.5深度学习是机器学习的一部分
+TensorBoard：TensorFlow的可视化工具：计算图可视化、度量可视化
+全面的机器学习工具集：Neural Nets、K-Means、Loss Functions, Metrics、Linear Algebra、 Decision Trees、 SVM、Gaussian Mixture Models、Regression、Random Forests、Probabilistic Methods、Signal Processing、Lattice
+从底层到高层各个适用：Premade Estimators(Models in a box)、Estimator（Distributed Execution, Integrates TensorBoard, tensorflow serving）、tf.keras（Model building using high-level primitives
+）
+1.4环境配置
+Anaconda是Python的一个科学计算发行版，内置了上千个Python经常会用到的库，包括 Scikit-learn、NumPy、SciPy、Pandas等
+官网网址：https://www.anaconda.com/
+1.4.1安装anaconda：通过镜像下载 下载地址（清华映像站）： https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/   
+Windows-x86_64是64位系统。下载版本为：3-4.2版本，要下64位版本否则无法使用TF
+1.4.2在anaconda下安装TensorFlow：
+1.4.2.1修改下载源位置：通过 conda config 命令生成配置文件，这里使用清华的镜像： https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+具体操作
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+并在用户目录下找到.condarc，删除第3行 –defaults
+1.4.2.2安装TF
+安装普通版TensorFlow命令为： conda install tensorflow
+安装GPU版TensorFlow命令为： conda install tensorflow-gpu
+1.4.3检测是否安装成功
+TensorFlow安装依赖于MSVCP140.DLL，如果安装过程中报相关错误信息，请确定是否 已经有安装过Visual C++ 2015 redistributable(x64 verion)，并且在 %PATH% 里
+Visual C++ 2015 redistributable下载网址： https://www.microsoft.com/en-us/download/details.aspx?id=53587
+打开Jupyter，新建Python3文件，import tensorflow as tf tf.__version__
